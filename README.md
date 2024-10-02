@@ -2,13 +2,15 @@
 
 ## Cách chạy dự án
 
+- B0. Cài đặt expo cli ```npm install -g eas-cli```
+
 - B1. Clone dự án về bằng lệnh ```git clone https://github.com/FarmingBoard/farming_mobile.git```
 
 - B2. cd vào thư mục dự án nếu nó chưa vào
 
 - B3. Install package bằng lệnh ```npm i```
 
-- B4. Chạy dự án bằng ```expo start```
+- B4. Chạy dự án bằng ```npx expo start```
 
 - B5. Kéo terminal lên chỗ có mã QR và dùng app Expo ở điện thoại quét mã QR để vào ứng dụng
 
