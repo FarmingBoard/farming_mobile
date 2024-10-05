@@ -18,7 +18,6 @@ export default function WeatherDisplay() {
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.card}>
-                <Text style={styles.title}>Thời tiết hiện tại</Text>
                 <View style={styles.infoContainer}>
                     <View style={styles.infoItem}>
                         <View style={[styles.iconBackground, { backgroundColor: '#FFCCCB' }]}>
@@ -51,7 +50,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5F5F5',
         borderRadius: 20,
         padding: 20,
-        width: '90%',
+        width: '100%',
         maxWidth: 350,
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 2 },
