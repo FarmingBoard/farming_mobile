@@ -8,7 +8,11 @@ export default function GardenPage() {
         <View>
             <HeaderDisplay />
             <View style={styles.container}>
-                <Text style={styles.title}>Nhiệt độ, độ ẩm</Text>
+                <Text style={styles.title}>Nhiệt độ, độ ẩm x</Text>
+                <WeatherDisplay />
+            </View>
+            <View style={styles.container}>
+                <Text style={styles.title}>Độ ẩm đất</Text>
                 <WeatherDisplay />
             </View>
         </View>
@@ -24,6 +28,7 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         marginVertical: 16,
+        color: "#222222"
     },
     text: {
         fontSize: 16,

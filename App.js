@@ -9,6 +9,7 @@ import WeatherDisplay from './src/components/WeatherDisplay';
 import AuthPage from './src/pages/AuthPage';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import GardenPage from './src/pages/GardenPage';
+import DevicePage from './src/pages/DevicePage';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,7 +29,7 @@ const ScenarioScreen = () => (
     showsVerticalScrollIndicator={false}
     showsHorizontalScrollIndicator={false}
   >
-    <Text style={styles.screenTitle}>Scrip</Text>
+    <DevicePage />
   </ScrollView>
 );
 
@@ -101,12 +102,12 @@ export default function App() {
           <Tab.Screen
             name="Scenario"
             component={ScenarioScreen}
-            options={{ tabBarLabel: 'Kịch bản' }}
+            options={{ tabBarLabel: 'Thiết bị' }}
           />
           <Tab.Screen
             name="Smart"
             component={SmartScreen}
-            options={{ tabBarLabel: 'Thông minh' }}
+            options={{ tabBarLabel: 'Kịch bản' }}
           />
           <Tab.Screen
             name="Profile"
